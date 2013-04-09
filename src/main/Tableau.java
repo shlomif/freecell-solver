@@ -157,6 +157,18 @@ public class Tableau {
 			}
 			r++;
 		}
+
+//		# fix home if out of order
+//	    
+//	    my %home = map {
+//	        my $card = $self->[$_][0];
+//	        suit($card) + 4, $card;
+//	    } 4 .. 7;
+//	    foreach ( 4 .. 7 ) {
+//	        $self->[$_][0] = exists( $home{$_} ) ? $home{$_} : 0;
+//	    }
+//	    $self;
+
 	}
 
 	public void fromToken (Entry entry){
